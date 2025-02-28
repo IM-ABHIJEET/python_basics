@@ -22,3 +22,48 @@ def factorial(n):
 n=int(input("Enter the number : "))
 abs=factorial(n)
 print(abs)
+
+#--------------------------------------------------------------------------#
+
+#WAP to print the fibonacci series upto the n numbers
+
+def fibb(n):
+    if n==0:
+        print("invalid input")
+    elif n==1:
+        return 0
+    elif n==2:
+        return 1
+    else:
+        return fibb(n-1)+fibb(n-2)
+n=int(input("enter the number : "))
+fibb(n)
+for i in range (1,n+1):
+    print(fibb(i),end=" ")
+
+#----------------------------------------------------------------------------#
+
+#WAP to find the sum of n natural number
+
+def sum(n):
+  if n==0:
+    return 0
+  else:
+    return n+sum(n-1)
+
+n=int(input("enter the number : "))
+print(sum(n))
+
+#-------------------------------------------------------------------------------#
+
+
+
+
+
+
+
+
+
+
+
+
